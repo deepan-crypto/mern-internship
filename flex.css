@@ -4,7 +4,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    align-content:center;
 }
+/*wrap-values: no wrap  ,wrap,wrap-reverse 
+align-content : flex-start,flex-end,center,space-between,space-around,stretch
+values of justify-content
 .flexItem{
     background-color: yellow;
     padding: 15px;
