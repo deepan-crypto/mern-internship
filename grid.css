@@ -88,3 +88,13 @@ main{
     "Footer Footer";
       }
     }
+
+@media (min-width:577px) and (max-width:768px){
+    body{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+    "head head head"
+     "navbar mainContent aside"
+    "Footer Footer Footer";
+      }
+    }   
