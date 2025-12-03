@@ -1,0 +1,7 @@
+.gridContainer{
+    border:1px solid red;
+    height:90vh;
+    display:grid;
+    grid-template-columns: 100px,200px,300px,400px;
+    
+}
