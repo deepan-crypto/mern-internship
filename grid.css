@@ -2,6 +2,12 @@
     border:1px solid red;
     height:90vh;
     display:grid;
+    /*
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-template-columns:100PX, repeat(4,100px);
+
+    */
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,100px);
 }
