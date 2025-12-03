@@ -40,5 +40,39 @@
 body{
     height:100vh;
     display:grid;
-    grid
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "head head head"
+    "left main right"
+    "foot foot foot";
+
 }
+header{
+    grid-area: head;
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+nav{
+    grid-area:navbar;
+    background-color: green;
+    color:yellow;
+    border:1px solid;
+}
+aside{
+
+}
+
+/*
+577px - less than 576px for mobiles
+768px-577px to  less than 768px for 
+992px- 769px to less than 992px for tablets
+1200px- 993px to less than 1200px for small desktops
+1201px and more for large desktops
+*/
+@media (max-width:576px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;      }
+    }
