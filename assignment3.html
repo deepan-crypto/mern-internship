@@ -3,13 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="assignment3.css" />
-    <title>Flexbox Example</title>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="flex-item item1">Item 1</div>
-      <div class="flex-item item2">Item 2</div>
-      <div class="flex-item item3">Item 3</div>
+    <header><h1>All Flexbox Concepts - Basic HTML Demo</h1></header>
+
+    <div>
+      <h2>1. Display: Flex</h2>
+      <hr />
+
+      <p>This enables Flexbox input on a computer</p>
+      <div class="container flex">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
     </div>
+
+    <div>
+      <h2>2. Flex Direction</h2>
+      <hr />
+
+      <p>Direction of the main axis (row by default)</p>
+      <div class="container direction">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>3. Justify Content</h2>
+      <hr />
+
+      <p>
+        <Content alignment along the main axis (horizontal) if flex-direction is
+        row/p>
+      </p>
+      <div class="container justify">
+        <div class="row">
+          <div>Center</div>
+          <div>Aligned</div>
+        </div>
+
+        <div class="column">
+          <div>Start</div>
+          <div>End</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>4. Align Items</h2>
+      <hr />
+
+      <p>
+        Alignment along the cross axis (vertical if flex-direction is a row)
+      </p>
+      <div class="container align">
+        <div>Top</div>
+        <div class="second">Tail</div>
+        <div>Start</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>5. Flex Wrap</h2>
+      <hr />
+
+      <p>Allow items to wrap into multiple lines</p>
+      <div class="container wrap">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>6. Gap</h2>
+      <hr />
+
+      <p>space between items (row and column gap)</p>
+      <div class="container gap">  
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>7. Flex Grow</h2>
+      <hr />
+
+      <p>Define how much a flex item will grow relative to others</p>
+      <div class="container grow">
+        <div>Grow 1</div>
+        <div>Grow 2</div>
+        <div>Grow 3</div>
+        </div>
+      </div>
+      <div>
+        <h2>8. Flex Shrink</h2>
+        <hr />
+
+        <p>Define how much a flex item will shrink relative to others</p>
+        <div class="container shrink">
+          <div>Shrink</div>
+          <div>No Shrink</div>
+        </div>
+      </div>
+      <div>
+        <h2>10.Order</h2>
+        <hr />
+        <P>Controls the order in which items appears (visually)</P>
+        <div class="container order">
+          <div class="Default">Default</div>
+          <div class="Order 1">Order 1</div>
+          <div class="Order 2">Order 2</div>
+      </div>
+      
+        </div>
+        
+<div>
+    <div>
+        <h2>11. Align Self</h2>
+        <p>OverRides align-itemss for individual Items </p>
+        <div class="container align">
+            <div class="Top">Top</div>
+            <div class="Center">Center</div>
+            <div class="Bottom">Bottom</div>
+        </div>
+</div>
   </body>
+</html>

@@ -1,0 +1,123 @@
+header {
+  text-align: center;
+}
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
+
+.container.direction div,
+.container.flex div {
+  background-color: lightblue;
+  text-align: center;
+  height: 40px;
+}
+
+.container.direction {
+  flex-direction: column;
+}
+
+.container.justify {
+  flex-direction: column;
+}
+
+.container.justify div {
+  display: flex;
+  height: 40px;
+  gap: 10px;
+}
+
+.container.justify div div{
+    background-color: lightblue;
+    text-align: center;
+    height: 40px;
+}
+
+.container .row {
+    justify-content: center;
+}
+
+.container .column {
+    justify-content: space-between;
+}
+
+.container.align div {
+    background-color: lightblue;
+    height: 40px;
+    text-align: center;
+}
+
+.container.align {
+    height: 100px;
+    align-items: center;
+}
+
+.container.align .second {
+    height: 60px;
+}
+
+.container.wrap div {
+    background-color: lightblue;
+    height: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.container.wrap {
+    flex-wrap: wrap;
+}
+
+.container.gap div {
+    background-color: lightblue;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.container.gap {
+    gap: 50px;
+}
+
+.container.grow div {
+    background-color: lightblue;    
+    height: 40px;
+    text-align: center;
+}
+
+.container.grow div:nth-of-type(1){
+    flex-grow: 3;
+}
+
+.container.grow div:nth-of-type(2){
+    flex-grow: 8;
+}
+
+.container.grow div:nth-of-type(3){
+    flex-grow: 1;
+}
+
+.container.shrink div {
+    background-color: lightblue;    
+    height: 40px;
+    text-align: center;
+    padding:10px;
+    width: 200px;
+
+}
+.container.order div {
+    background-color: lightblue;    
+    height: 40px;
+    text-align: center;
+    width: 100px;
+
+}
+.container.align div {
+    background-color: lightblue;    
+    height: 40px;
+    text-align: center;
+    width: 100px;
+
+}
