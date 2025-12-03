@@ -61,7 +61,15 @@ nav{
     border:1px solid;
 }
 aside{
-
+     display:none;
+}
+.flexItem{
+    font-size:14px;
+    height:50px;
+    width:50px;
+}
+main{
+    background-color: red;
 }
 
 /*
@@ -73,6 +81,10 @@ aside{
 */
 @media (max-width:576px){
     body{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;      }
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+    "head head"
+     "navbar mainContent"
+    "Footer Footer";
+      }
     }
