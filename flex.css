@@ -20,7 +20,11 @@ values of justify-content
     font-size:24px;
     height:200px;
     width:200px;
+
 }
+/* to place item at the end we have to use greater  value from 0 to put in the staring we need negativr valy;
+
+default order of every element is 0*/
 
 .flexItem:nth-child(1){
     order:1;
