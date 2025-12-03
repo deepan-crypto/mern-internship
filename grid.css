@@ -118,3 +118,21 @@ main{
     "Footer Footer Footer";
         }
     }
+@media (min-width:1201px){
+    body{
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-areas:
+    "head head head"
+
+        "navbar mainContent aside"
+    "Footer Footer Footer";
+        
+        }
+    }
+footer{
+    grid-area: foot;
+    background-color: black;
+    color:white;            
+    padding:10px;
+
+}
