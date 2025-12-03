@@ -1,90 +1,60 @@
+.top-bar {
+  background: blue;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  text-align: center;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: lightskyblue;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      height: 100vh;
-    }
+.mainLayout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background-color: #e9e9e9;
+}
 
-    
-    .menu {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+.sidebar {
+  background: black;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+}
 
-    .menu h2 {
-      margin: 0;
-      font-size: 20px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
-    }
+.menu {
+    font-size: 24px;
+}
 
-    .menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+.sidebar p {
+  margin: 12px 0;
+}
 
-    .menu ul li {
-      font-size: 18px;
-      cursor: pointer;
-    }
+.content {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+}
 
-    
-    .dashboard {
-      background: rgb(6, 6, 235);
-      color: white;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
+.row {
+  display: grid;
+  gap: 8px;
+}
 
-    .dashboard h1 {
-      text-align: center;
-      margin: 0;
-    }
+.row-4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 40px;
+}
 
-    
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
+.row-4 .box {
+    border-left: 5px solid blue;
+}
 
-    .box {
-      background: white;
-      color: black;
-      padding: 20px;
-      border-radius: 8px;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      border-left: 5px solid blue;
-    }
+.row-3 {
+  grid-template-columns: repeat(3, 1fr);
+  height: 40px;
+}
 
-    
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: rgb(0, 0, 0);
-      padding: 20px;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-    }
+.box {
+  background: white;
+  padding: 25px;
+  text-align: center;
+}
