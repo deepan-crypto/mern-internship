@@ -25,3 +25,11 @@ function squareNumbers(...numbers) {
 
 const resultQ3 = squareNumbers(2, 3, 4);
 console.log(resultQ3); 
+
+//q4
+function getEvenNumbers(...numbers) {
+  return numbers.filter(num => num % 2 === 0);
+}
+
+const resultQ4 = getEvenNumbers(1, 2, 3, 4, 5, 6, 7, 8);
+console.log(resultQ4); 
