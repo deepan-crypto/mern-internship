@@ -68,3 +68,17 @@ const resultQ7 = addTen(1, "a", 5, true, 10);
 console.log(resultQ7); 
 
 
+//q8
+function createFruitArray(...fruits) {
+  if (fruits.length === 0) {
+    return ["apple", "banana"];
+  } else {
+    return fruits;
+  }
+}
+
+const resultQ8a = createFruitArray();
+console.log(resultQ8a); 
+
+const resultQ8b = createFruitArray("grape", "orange", "kiwi");
+console.log(resultQ8b); 
