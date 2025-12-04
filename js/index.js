@@ -67,9 +67,9 @@ const add=(parameter1,parameter2)=>{
     let sum= num1+num2;
 
     console.log("Sum is:",sum);
+    // the sum of parameter1 value is value and the parameter2 value is value
 
 };
 add(10,20);
 add(40,50);
 add();
-
