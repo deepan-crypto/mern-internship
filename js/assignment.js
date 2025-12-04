@@ -14,3 +14,14 @@ function stringOnly(...args) {
 
 const resultQ2 = stringOnly(1, "apple", true, "banana", 42, "cherry");
 console.log(resultQ2); 
+
+
+
+//q3
+function squareNumbers(...numbers) {
+  return numbers.map(num => num * num);
+}
+
+
+const resultQ3 = squareNumbers(2, 3, 4);
+console.log(resultQ3); 
