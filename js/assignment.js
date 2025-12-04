@@ -44,3 +44,14 @@ const resultQ5 = collectNames("sid", "raj", "anna");
 console.log(resultQ5); 
 
 //q6
+function makeUser(name, age, city) {
+  // Returns an array containing a single object
+  return [{
+    name: name,
+    age: age,
+    city: city
+  }];
+}
+
+const resultQ6 = makeUser("Sid", 22, "Delhi");
+console.log(resultQ6); 
