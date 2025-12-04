@@ -119,9 +119,12 @@ arr1.forEach((value,index)=>{
 
 //Map Function
 let arr2=[1,2,3,4,5,6];
-let aa=arr.map((value,index)=>{
-    return value+index;
-});
+// let aa=arr.map((value,index)=>{
+//     return value+index;
+// });
 
+let aa=arr.map((value,index)=>value+index);
+console.log(aa);
+console.log(arr2);
 
 
