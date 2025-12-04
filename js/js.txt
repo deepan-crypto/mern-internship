@@ -1,0 +1,5 @@
+javascript is  a both scripting and programming language 
+ when used in frontend it is scripting language
+ when used  in backend with node/express it is  programinng language
+
+ 
