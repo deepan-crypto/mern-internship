@@ -55,3 +55,16 @@ function makeUser(name, age, city) {
 
 const resultQ6 = makeUser("Sid", 22, "Delhi");
 console.log(resultQ6); 
+
+
+//q7
+function addTen(...args) {
+  return args
+    .filter(arg => typeof arg === 'number') 
+    .map(num => num + 10);                   
+}
+
+const resultQ7 = addTen(1, "a", 5, true, 10);
+console.log(resultQ7); 
+
+
