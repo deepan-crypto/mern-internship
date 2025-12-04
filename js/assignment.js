@@ -33,3 +33,14 @@ function getEvenNumbers(...numbers) {
 
 const resultQ4 = getEvenNumbers(1, 2, 3, 4, 5, 6, 7, 8);
 console.log(resultQ4); 
+
+
+//q5
+function collectNames(...names) {
+  return names.map(name => name.toUpperCase());
+}
+
+const resultQ5 = collectNames("sid", "raj", "anna");
+console.log(resultQ5); 
+
+//q6
