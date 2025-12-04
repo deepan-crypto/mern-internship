@@ -85,3 +85,21 @@ console.log(a+b);
 console.log(a-b);
 console.log(a*b);
 console.log(a/b);
+
+
+//arrays
+
+console.log(2=="2");
+let c=[10,20,30,40,50,"ass"];
+
+let d=[10,20,30,40,50,"ass"];
+
+console.log(c==d);
+console.log(c[0]===d[0]);   
+
+let arr=[1,2,3,4,5,6];
+
+
+
+
+
