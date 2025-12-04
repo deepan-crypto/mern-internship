@@ -60,16 +60,28 @@
 
 //Function to add Two Numbers
 
-const add=(parameter1,parameter2)=>{
-    console.log(parameter1,parameter2);
-    let num1=parameter1 || 10;
-    let num2=parameter2 || 20;
-    let sum= num1+num2;
+// const add=(parameter1,parameter2)=>{
+//     console.log(parameter1,parameter2);
+//     let num1=parameter1 || 10;
+//     let num2=parameter2 || 20;
+//     let sum= num1+num2;
 
-    console.log("Sum is:",sum);
-    // the sum of parameter1 value is value and the parameter2 value is value
+//     console.log("Sum is:",sum);
+//     // the sum of parameter1 value is value and the parameter2 value is value
 
-};
-add(10,20);
-add(40,50);
-add();
+// };
+// add(10,20);
+// add(40,50);
+// add();
+
+
+
+
+//Functions
+
+let a="10";
+let b=2;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
