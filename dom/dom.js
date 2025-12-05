@@ -75,13 +75,15 @@ head.classList.add("color");
   let lii=document.createElement("li");
 
 lii.textContent="Item 1";
+lii.textContent="Item 2";
 
 ul.appendChild(lii);
 
 document.body.appendChild(ul);
 
-  newPara.textContent="This is a new paragraph";
-
-  let body=document.querySelector("body");
-
-  body.appendChild(newPara);
+ let arr=["Apple","Banana","Mango"];
+ arr.forEach((elemnt)=>{
+    let lo=document.createElement("li");
+    lo.textContent=elemnt;
+    ul.appendChild(lo);
+ });
