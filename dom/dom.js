@@ -67,3 +67,21 @@ head.classList.add("color");
   p.style.color="blue";
   p.style.backgroundColor="green";
   p.style.fontSize="30px";  
+
+
+  //Create Element
+
+  let ul=document.createElement("ul");
+  let lii=document.createElement("li");
+
+lii.textContent="Item 1";
+
+ul.appendChild(lii);
+
+document.body.appendChild(ul);
+
+  newPara.textContent="This is a new paragraph";
+
+  let body=document.querySelector("body");
+
+  body.appendChild(newPara);
