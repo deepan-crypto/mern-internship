@@ -33,18 +33,31 @@
 
 /// Read and Write in DOM
 
-let head=document.querySelector("p");
+// let head=document.querySelector("p");
 
-//Read operation
-console.log(head.textContent);
+// //Read operation
+// console.log(head.textContent);
 
-//Wrtite operation
-head.textContent="This is a new paragraph";
+// //Wrtite operation
+// head.textContent="This is a new paragraph";
 
-let div=document.querySelector("div");
-div.innerHTML="<p>Hello From para</p>";
+// let div=document.querySelector("div");
+// div.innerHTML="<p>Hello From para</p>";
 
-console.log(div.innerHTML);
-console.log(div.textContent);
+// console.log(div.innerHTML);
+// console.log(div.textContent);
 
 
+
+// add / remove // toggle
+
+let head=document.querySelector("h1");
+
+console.log(head);
+
+head.classList.add("color");
+    head.classList.remove("borer");
+    head.classList.toggle("background");
+
+
+  
