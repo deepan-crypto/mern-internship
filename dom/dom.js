@@ -60,4 +60,10 @@ head.classList.add("color");
     head.classList.toggle("background");
 
 
+    //Styling 
+
+  let p =document.querySelector("p");
   
+  p.style.color="blue";
+  p.style.backgroundColor="green";
+  p.style.fontSize="30px";  
