@@ -197,3 +197,4 @@ let c=a.reduce((acc,el,index)=>{
 },200);
 
 console.log(c);
+
