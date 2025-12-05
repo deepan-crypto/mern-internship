@@ -1,14 +1,12 @@
-
-let textPara = document.getElementById("text");
-let box = document.getElementById("box");
-let itemInput = document.getElementById("itemInput");
-let list = document.getElementById("list");
-
-let btnChangeText = document.querySelector('button[onclick="changeText()"]');
-let btnChangeColor = document.querySelector('button[onclick="changeColor()"]');
-let btnHide = document.querySelector('button[onclick="hideBox()"]');
-let btnShow = document.querySelector('button[onclick="showBox()"]');
-let btnAddItem = document.querySelector('button[onclick="addItem()"]');
+let textPara = document.querySelector("#text");
+let box = document.querySelector("#box");
+let hideBtn = document.querySelector(".container button:nth-child(6)");
+let showBtn = document.querySelector(".container button:nth-child(7)");
+let changeTextBtn = document.querySelector(".container button:nth-child(4)");
+let changeColorBtn = document.querySelector(".container button:nth-child(5)");
+let itemInput = document.querySelector("#itemInput");
+let addItemBtn = document.querySelector(".container div button");
+let list = document.querySelector("#list");
 
 
 
