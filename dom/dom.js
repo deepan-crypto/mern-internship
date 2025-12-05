@@ -1,31 +1,50 @@
 
-//Tag Selector
-let heading1=document.getElementsByTagName("h1");
-//HTML Collection Array
+// //Tag Selector
+// let heading1=document.getElementsByTagName("h1");
+// //HTML Collection Array
 
-console.log(heading[1]);
+// console.log(heading[1]);
 
-// Class Selector
-let cl=document.getElementsByClassName("a");
-//Html Collection Array
-console.log(cl[0]);
+// // Class Selector
+// let cl=document.getElementsByClassName("a");
+// //Html Collection Array
+// console.log(cl[0]);
 
-//ID Selector
-let id=document.getElementById("b");
-//it will return single element and the first element
+// //ID Selector
+// let id=document.getElementById("b");
+// //it will return single element and the first element
 
-console.log(id);
+// console.log(id);
 
-//Query Selector(it works on all the three selectors)
-let sel=document.querySelector("#a");
-// it will return first element annd  single element
+// //Query Selector(it works on all the three selectors)
+// let sel=document.querySelector("#a");
+// // it will return first element annd  single element
 
-console.log(query);
+// console.log(query);
 
 
 
-//Query Selector All(it works on all the three selectors)
-let d=document.querySelectorAll(".a");
-//it will return all the elements and it will return NodeList Array
+// //Query Selector All(it works on all the three selectors)
+// let d=document.querySelectorAll(".a");
+// //it will return all the elements and it will return NodeList Array
 
-console.log(d);
+// console.log(d);
+
+
+/// Read and Write in DOM
+
+let head=document.querySelector("p");
+
+//Read operation
+console.log(head.textContent);
+
+//Wrtite operation
+head.textContent="This is a new paragraph";
+
+let div=document.querySelector("div");
+div.innerHTML="<p>Hello From para</p>";
+
+console.log(div.innerHTML);
+console.log(div.textContent);
+
+
