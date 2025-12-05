@@ -10,12 +10,30 @@ let list = document.querySelector("#list");
 
 
 
+// Change the paragraph text
+changeTextBtn.addEventListener("click", () => {
+  changeText();
+});
 
-btnChangeText.addEventListener("click", changeText);
-btnChangeColor.addEventListener("click", changeColor);
-btnHide.addEventListener("click", hideBox);
-btnShow.addEventListener("click", showBox);
-btnAddItem.addEventListener("click", addItem);
+// Change the box background color
+changeColorBtn.addEventListener("click", () => {
+  changeColor();
+});
+
+// Hide box
+hideBtn.addEventListener("click", () => {
+  hideBox();
+});
+
+// Show box
+showBtn.addEventListener("click", () => {
+  showBox();
+});
+
+// Add list item
+addItemBtn.addEventListener("click", () => {
+  addItem();
+});
 
 
 // 1. Change Paragraph Text
