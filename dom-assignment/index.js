@@ -36,44 +36,39 @@ addItemBtn.addEventListener("click", () => {
 });
 
 
-// 1. Change Paragraph Text
+// Function 1: Change paragraph text
 function changeText() {
   textPara.textContent = "The text has now been changed!";
 }
 
-// 2. Change Background Color of the Box
+// Function 2: Change background color of box
 function changeColor() {
-  // generate a random color
   let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
   box.style.backgroundColor = randomColor;
 }
 
-// 3. Hide the Box
+// Function 3: Hide box
 function hideBox() {
   box.style.display = "none";
 }
 
-// 4. Show the Box
+// Function 4: Show box
 function showBox() {
   box.style.display = "flex";
 }
 
-// 5. Add a New Item to the List
+// Function 5: Add a new item to the list
 function addItem() {
   let value = itemInput.value.trim();
 
-  if (value === "") {
-    alert("Please enter a valid item!");
+  if (!value) {
+    alert("Please enter an item!");
     return;
   }
 
-  // create new li element
   let li = document.createElement("li");
   li.textContent = value;
-
-  // add li to the ul
   list.appendChild(li);
 
-  // clear input
   itemInput.value = "";
 }
