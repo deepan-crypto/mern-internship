@@ -47,3 +47,19 @@ let mypromise=new Promise((res,rej)=>{
     console.log(err);
  });
 
+// Aysnc and await 
+//  no error handling
+
+let handlePromise = async()=>{
+    try{
+        console.log("asdf");
+        let  response = await mypromise;
+        console.log(response);
+        console.log("anything");
+
+    }catch(err){
+        console.log(err);
+    }finally{
+        console.log("Execution completed");
+    }
+}
