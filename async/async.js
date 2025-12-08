@@ -38,28 +38,51 @@ let mypromise=new Promise((res,rej)=>{
 // .catch()
 
  
-// promise pass a callback function
- mypromise
-    .then((a)=>{
-    console.log(a);
- })
- .catch((err)=>{
-    console.log(err);
- });
+// // promise pass a callback function
+//  mypromise
+//     .then((a)=>{
+//     console.log(a);
+//  })
+//  .catch((err)=>{
+//     console.log(err);
+//  });
 
-// Aysnc and await 
-//  no error handling
+// // Aysnc and await 
+// //  no error handling
 
-let handlePromise = async()=>{
-    try{
-        console.log("asdf");
-        let  response = await mypromise;
-        console.log(response);
-        console.log("anything");
+// let handlePromise = async()=>{
+//     try{
+//         console.log("asdf");
+//         let  response = await mypromise;
+//         console.log(response);
+//         console.log("anything");
 
-    }catch(err){
+//     }catch(err){
+//         console.log(err);
+//     }finally{
+//         console.log("Execution completed");
+//     }
+// }
+
+// handlePromise();
+
+// // fetch API
+// // to make network request
+// // to get data from server
+// // to send data to server
+
+// // 1. using then and catch
+
+let fetchData=()=>{
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res)=>{
+        console.log(res);
+        return res.json();
+})
+    .then((data)=>{
+        console.log("value is",data);
+    })
+    .catch((err)=>{
         console.log(err);
-    }finally{
-        console.log("Execution completed");
-    }
+    });
 }
