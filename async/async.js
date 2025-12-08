@@ -22,16 +22,16 @@
 //fulfilled
 //rejected
 
-let mypromise=new Promise((res,rej)=>{
-            let mark=60;
-            if(marks >= 60){
-                res("Student passed");
-            }
-            else{
-                rej("Student failed");
-            }
+// let mypromise=new Promise((res,rej)=>{
+//             let mark=60;
+//             if(marks >= 60){
+//                 res("Student passed");
+//             }
+//             else{
+//                 rej("Student failed");
+//             }
 
-});
+// });
 
 // ways to ca;ll promise
 //.then()
