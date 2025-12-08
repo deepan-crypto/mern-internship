@@ -73,16 +73,29 @@ let mypromise=new Promise((res,rej)=>{
 
 // // 1. using then and catch
 
-let fetchData=()=>{
-    fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((res)=>{
-        console.log(res);
-        return res.json();
-})
-    .then((data)=>{
+// let fetchData=()=>{
+//     fetch("https://jsonplaceholder.typicode.com/posts")
+//     .then((res)=>{
+//         console.log(res);
+//         return res.json();
+// })
+//     .then((data)=>{
+//         console.log("value is",data);
+//     })
+//     .catch((err)=>{
+//         console.log(err);
+//     });
+// }
+
+
+let fetchData=async()=>{
+    try{
+      const response=await fetch("https://jsonplaceholder.typicode.com/todos");
+      console.log(response);
+        const data=await response.json();
         console.log("value is",data);
-    })
-    .catch((err)=>{
-        console.log(err);
-    });
+    }
+    catch(error){
+        console.log(error);
+    }
 }
