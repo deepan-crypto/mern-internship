@@ -1,38 +1,72 @@
 import "./App.css";
 import { useState } from "react";
-import Counter from "./Counter";
-
 function App() {
+  let [randomNumber, setRandomNuber] = useState(
+    Math.trunc(Math.random() * 20) + 1
+  );
+  let [msg, setMsg] = useState("Start guessing...");
+  let [score, setScore] = useState(20);
+  let [highScore, setHighScore] = useState(0);
+  let [bg, setBg] = useState("black");
+  let [guess, setGuess] = useState("");
 
-  let [randomNumber,setRandomNumber]=useState(Math.trunc(Math.random() * 20) + 1);
+  let checkBtn = () => {
+    let inputVal = Number(guess);
+    if (!inputVal) {
+      setMsg("No Number");
+      return;
+    }
+    if (inputVal === randomNumber) {
+      setBg("green");
+      setMsg("Correct Value");
+      if (score > highScore) {
+        setHighScore(score);
+      }
+    } else if (inputVal > randomNumber) {
+      setScore(score - 1);
+      setMsg("Too High");
+    } else if (inputVal < randomNumber) {
+      setScore(score - 1);
+      setMsg("Too Low");
+    }
+  };
 
-  let [msb,SetMsg]=useState("Start guessing...");
-  let [score,SetScore]=useState(20);
-  let [highscore,SetHighscore]=useState(0);
-   let [bg,SetBg]=useState(Black);
-   let [guess,SetGuess]=useState("");
+  let init = () => {
+    setBg("black");
+    setScore(20);
+    setRandomNuber(Math.trunc(Math.random() * 20) + 1);
+    setMsg("Start guessing...");
+  };
 
   return (
-    <div>
+    <div className="App" style={{ backgroundColor: bg }}>
       <header>
         <h1>Guess My Number!</h1>
-        <p className="between">(Between 1 and 20)</p>
-        <button className="btn again">Again!</button>
-        <div className="number">?</div>
+        <p class="between">(Between 1 and 20)</p>
+        <button onClick={init} class="btn again">
+          Again!
+        </button>
+        <div class="number">{msg === "Correct Value" ? randomNumber : "?"}</div>
       </header>
       <main>
-        <section className="left">
-          
-          <input type="number" className="guess" value={guess} onChange={(e) => SetGuess(e.target.value)} />
-          <button className="btn check">Check!</button>
+        <section class="left">
+          <input
+            type="number"
+            class="guess"
+            value={guess}
+            onChange={(e) => setGuess(e.target.value)}
+          />
+          <button onClick={checkBtn} class="btn check">
+            Check!
+          </button>
         </section>
-        <section className="right">
-          <p className="message">{msb}</p>
-          <p className="label-score">
-            💯 Score: <span className="score">{score}</span>
+        <section class="right">
+          <p class="message">{msg}</p>
+          <p class="label-score">
+            💯 Score: <span class="score">{score}</span>
           </p>
-          <p className="label-highscore">
-            🥇 Highscore: <span className="highscore">{highscore}</span>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">{highScore}</span>
           </p>
         </section>
       </main>
