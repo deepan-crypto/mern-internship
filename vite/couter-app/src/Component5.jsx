@@ -1,11 +1,11 @@
-const Component5 = ()=>{
+const Component5 = (props)=>{
+    
+  let src=9;
     return(
         <div>
             <h2>This is Component 5</h2>
-            <p>dasfhfjgj</p>
+          
         </div>
-           
-        
     );
 };
 export default Component5;
