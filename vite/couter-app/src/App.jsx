@@ -3,6 +3,15 @@ import { useState } from "react";
 import Counter from "./Counter";
 
 function App() {
+
+  let [randomNumber,setRandomNumber]=useState(Math.trunc(Math.random() * 20) + 1);
+
+  let [msb,SetMsg]=useState("Start guessing...");
+  let [score,SetScore]=useState(20);
+  let [highscore,SetHighscore]=useState(0);
+   let [bg,SetBg]=useState(Black);
+   let [guess,SetGuess]=useState("");
+
   return (
     <div>
       <header>
@@ -13,16 +22,17 @@ function App() {
       </header>
       <main>
         <section className="left">
-          <input type="number" className="guess" />
+          
+          <input type="number" className="guess" value={guess} onChange={(e) => SetGuess(e.target.value)} />
           <button className="btn check">Check!</button>
         </section>
         <section className="right">
-          <p className="message">Start guessing...</p>
+          <p className="message">{msb}</p>
           <p className="label-score">
-            💯 Score: <span className="score">20</span>
+            💯 Score: <span className="score">{score}</span>
           </p>
           <p className="label-highscore">
-            🥇 Highscore: <span className="highscore">0</span>
+            🥇 Highscore: <span className="highscore">{highscore}</span>
           </p>
         </section>
       </main>
